@@ -1,22 +1,22 @@
 # api
-Starter for REST API workshop that show how to start working on REST APIs using Nodejs and Express.
+Starter for REST API workshop that shows how to start working on REST APIs using Nodejs and Express.
 
 # Requirements
 * Node.js
 
 
 # Usage
-1. Click Clone or download button. Then, Download ZIP.
+1. Click **Clone** or **download** button. Then, **Download ZIP**.
 <img width="463" alt="download api starter" src="https://user-images.githubusercontent.com/42312407/74997715-e515d780-5467-11ea-8348-6103db4d43f2.png">
-2. Right click on the downloaded .zip folder and click Extract All.
+2. Right click on the downloaded .zip folder and click **Extract All**.
 
   
 
 # First Activity
 ## Activity Goal
-In this activity you will learn how to use the first REST API call method **GET**. 
-You will call [TheMovieDB](https://developers.themoviedb.org/3/getting-started/introduction) public API to retrieve list 
-of movies information. 
+In this activity you will learn how to use the first REST API call method *GET*. 
+You will call [TheMovieDB](https://developers.themoviedb.org/3/getting-started/introduction) public API to retrieve the list 
+of movie information. 
 <!--
 In [First Activity](#first-activity) you learned how to response to the user for a simple request all the requests will 
 return the same response. What if the user ask you to answer based on some input that are provided in the request? which
@@ -24,10 +24,10 @@ means the response will be different for each request.
 -->
 ## PreActivity Steps
 ### 1. Sign up on TheMovieDB
-If you do not already have an account on *TheMovieDB* API, [sign up for TheMovieDB API](https://www.themoviedb.org/account/signup).
+If you don't have an account on *TheMovieDB* API, [sign up for TheMovieDB API](https://www.themoviedb.org/account/signup).
 
 ### 2. Get APIKey to use TheMovieDB API
-You need to get authentication key that will authorized you to request for a movies information.
+You need to get the authentication key that will authorize you to request for information on a movie.
 1. Go to [APIKey Link](https://developers.themoviedb.org/3/getting-started/introduction) .
 2. Click `Create` or `click here` under **Request an API Key**.
 3. Copy the generated API under **API Key (v3 auth)**.
@@ -114,7 +114,7 @@ You need to get authentication key that will authorized you to request for a mov
             ```
 4. Save your changes to **home.js** file.
 5. Using **Google Chrome**, open *home.html* on `api/views`.
-6. Wahoo 🎉🎉, congratulations you just create your first REST API call. 
+6. Wahoo 🎉🎉, congratulations you just created your first REST API call. 
     * *home.html* page will be look like this:
     
     <img width="1674" alt="Screen Shot 2020-02-21 at 12 42 30 AM" src="https://user-images.githubusercontent.com/42312407/74998776-acc3c880-546a-11ea-9a75-d4697dd1c5e7.png">
@@ -127,8 +127,8 @@ You need to get authentication key that will authorized you to request for a mov
 # Second Activity
 ## Activity Goal
 In this activity you will learn how to use cloud services REST API and how to exchange data with other applications.
-You need to ask the user to talk about his/her week in English, then you will send the user text to *IBM Tone Analyzer* 
-REST API to extract their feeling then you'll suggest list of movies based on their analyzed mood.
+For this activity, you need to ask the user to talk about his/her week in English, then you will send the user a text to *IBM Tone Analyzer* service.
+REST API will extract their feelings then you'll suggest a list of movies based on their analyzed mood.
 
 ## PreActivity Steps
 ### 1. Initialize your server using NodeJs
@@ -218,8 +218,8 @@ Now you have two APIs that returns useful data, lets build the right logic using
 ### Flow
 ![Picture1](https://user-images.githubusercontent.com/42312407/75001669-12b44e00-5473-11ea-8868-bade7f230a21.png)
 
-1. The user send a paragraph to the application.
-2. The application uses the Watson Tone Analyzer service to analyze user mood.
+1. The user sends a paragraph to the application.
+2. The application uses the *Watson Tone Analyzer* service to analyze user mood.
 3. The Watson Tone Analyzer service response with the analysis.
 4. The application request from the movie DB a specific movies geners based on watson analysis.
 5. The movie DB response with a list of movies. 
